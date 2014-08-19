@@ -1,0 +1,34 @@
+{
+    "name": "the-marvin-bot/marvin",
+    "description": "Marvin is a user-friendly bot for Slack",
+    "homepage": "http://marvin.rocks",
+    "keywords": [
+        "marvin",
+        "slack",
+        "bot",
+        "robot"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wouter Peschier",
+            "email": "kielabokkie@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "the-marvin-bot/framework": "0.*",
+        "the-marvin-bot/laws": "~1.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://plugins.marvin.rocks"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+
+        }
+    }
+}
