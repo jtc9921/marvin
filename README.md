@@ -126,6 +126,29 @@ php marvin plugin:finish
 
 This will ask you to supply the url to your git repo and a version number. Once your plugin is successfully commited you'll be asked if you want to remove the `workbench` directory.
 
+### Enable your plugin
+To enable your plugin you have to add the url to your git repo to the repositories array in your `composer.json` file:
+
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url":  "git@github.com:username/plugin-name.git"
+    }
+]
+```
+
+This will enable you to install your plugin by adding it to your required packages:
+
+```
+"require": {
+    ...
+    "username/plugin-name": "~1.0"
+}
+```
+
+Lastly you can use the `php marvin plugin:enable` command to enable your very own plugin for use with Marvin.
+
 ### Submit your plugin to the Marvin plugin repository
 Coming soon!
 
